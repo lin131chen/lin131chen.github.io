@@ -1,0 +1,199 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+owob作息破壞者
+</title>
+<style type="text/css">
+a{
+   color:white;
+   text-decoration:none;
+   }
+body{font-family:'Noto Sans TC', sans-serif;font-size:19;background-color:white;color:black;}
+.tableform{color:#000000;font-size:19px;margin-left:20%;
+  margin-right:20%;}
+marquee{color:rgb(83,126,194);
+}
+
+}
+<!--按鈕效果-->
+			.ex-button{
+				line-height: 50px;
+				height: 50px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin: 20px auto;
+				margin-bottom:0;
+				width: 400px;
+				max-width: 100%;
+				cursor: pointer;
+				background-color: #c76161;
+				color: #FFF;
+				transition: all .3s linear;
+				position: relative;
+			}
+			.mh {
+				color: rgba(255,255,255,1);
+				background-color: #c76161;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				transition: all 0.5s;
+				line-height: 40px;
+				position: relative;
+				border: 1px solid rgba(255,255,255,0.5);
+				overflow: hidden;
+			}
+
+			.mh > span {
+			transition: all 0.3s;
+			}
+
+			.mh:hover > span{
+				opacity: 0;
+				transform: translate(0px,40px);
+			}
+			
+			.mh::after{
+				content: attr(data-text);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transform: translate(-30%, -50%) rotate(-30deg);
+
+				transition: all 0.3s;   
+			}
+			
+			.mh:hover::after{
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+			
+			<!--table效果-->
+			<!--#t01 table{
+				width: 33%;    
+				color: white; 
+				font-size: 20px; 
+				border: 1px solid white; 
+				border-spacing: 20px;
+			}-->
+			#t01 {
+				width: 500px;
+				color: white;	
+				font-size: 20px;
+				border-spacing: 20px;	
+				position: relative;
+				left: 445px;
+				bottom:140px;
+				padding: 10px;
+				height:150px;
+				background-color:rgba(83, 126, 194, 0.8);
+			}
+			#t02 {
+				width: 500px;
+				color: white;	
+				font-size: 20px;
+				border-spacing: 20px;	
+				position: relative;
+				left: 445px;
+				bottom:120px;
+				padding: 10px;
+				height:150px;
+				background-color:rgba(83, 126, 194, 0.8);
+			}
+			#t03 {
+				width: 500px;
+				color: white;	
+				font-size: 20px;
+				border-spacing: 20px;	
+				position: relative;
+				left: 445px;
+				bottom:100px;
+				padding: 10px;
+				height:150px;
+				background-color:rgba(83, 126, 194, 0.8);
+			}
+</style>
+</head>
+
+<body>
+<h1 align="center">產品介紹</h1>
+		<table border = "0" align="left">
+		<tr>
+			<td><a href="index.html"><div class="ex.button mh" data-text="關於我們"><span>主頁</span></div></a></td>
+   <td><a href="new2.html"><div class="ex.button mh" data-text="訂位與預約"><span>產品介紹</span></div></a></td>
+   <td><a href="introduce.html"><div class="ex.button mh" data-text="人員簡介"><span>公司組成</span></div></a></td>
+   <td><a href="finance.html"><div class="ex.button mh" data-text="資金運用"><span>財務報表</span></div></a></td>
+   <td><a href="schedule.html"><div class="ex.button mh" data-text="重大活動"><span>行事曆</span></div></a></td>
+   <td><a href="feedback.html"><div class="ex.button mh" data-text="聯絡我們"><span>意見回饋</span></div></a><td>
+   <td><a href="announce.html"><div class="ex.button mh" data-text="重要公告"><span>最新消息</span></div></a><td>
+	</tr>
+	</table>
+	<br>
+    <br>
+	<hr>
+	<br>
+<table class="tableform" border="3" bgcolor="#FFFFFF" >
+<tr>
+<td><img src="4.jpg" height="250" width="300"></td>
+<td><b>1.超速電動滑板車租借</b><br>
+又要上課了，一館也太遠了吧！是不是很想要有一台電動滑板車啊，一邊趕課一邊享受迎面吹來的徐徐微風。但是荷包不夠深買不起怎麼辦呢？
+沒關係我們提供了電動滑板車的租借服務！！！本店出租的電動滑板車由德國原裝進口,品質有保障,且每月定期檢查煞車系統,雨天也能安全上路!
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30"  >50元/天 or 400元/月</marquee></td>
+</tr>
+<tr>
+<td><img src="11.jpg"height="250"></td>
+<td><b>2.宵夜Go Go!!</b><br>
+欸欸欸門禁解除了耶，終於可以出去吃宵夜了，但冬天又要來了好懶得出去喔。哈哈沒關係本店提供宵夜服務，各式小吃任君選擇!!你想得到的你想不到的應有盡有。
+掃描左方QR code即可下單!!
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30" >買滿200還可以送到宿舍一樓喔!</marquee></td>
+</tr>
+<tr>
+<td><img src="6.jpg"width="300"></td>
+<td><b>3.debug服務</b><br>
+這是本公司主打服務，專為學生設計。被這些抓不出來的錯誤煩得快瘋掉了？超強專人debug服務值得你一試！
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30" >30元/次</marquee></td>
+</tr>
+<tr>
+<td><img src="9.jpg"width="300"></td>
+<td><b>4.不醉不歸</b><br>
+本店提供啤酒、葡萄酒、洋酒、雞尾酒等酒類，除提供酒精飲品外，也提供非酒精飲品及小吃。燈光美,氣氛佳!喜歡安靜喝酒的朋友，
+本酒吧絕對是你們最好的選擇!
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30" >350元/位(酒水暢飲!!)</marquee>
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30" >當日壽星可享半價優惠!!</marquee></td>
+</tr>
+<tr>
+<td><img src="3.jpg" width="300" ></td>
+<td><b>5.夜不歸宿</b><br>
+本電競館以配備超強著名。本店有販售平價現搖飲料、現煮熱食，另外備有特級個人包廂，使用特級個人包廂者也可免費使用淋浴間洗澡。設備使用YZU新一代的Turing架構顯示卡。
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30" >普通價:10元/小時(一次購買5小時可享85折優惠!!)</marquee>
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30" >特級個人包廂:20元/小時(一次購買5小時可享85折優惠!!)</marquee></td>
+</tr>
+<tr>
+<td><img src="5.jpg"width="300" height="300" ></td>
+<td><b>6.外掛?!</b><br>
+想在好友榜里排第一嗎？手遊代打/陪打 現在下單馬上安排 勝率95+ 問價不虧!!!!
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30" >詢價請自動報上：1.你現在什麼段位/幾顆星？ </marquee>
+<br><marquee direction="down" scrollamount="1" behavior="alternate" height="30" > &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2.要打到什麼段位/幾顆星？</marquee></td>
+</tr>
+</table>
+<hr>
+  
+  <table width=100% rules="cols" style="table-layout:fixed">
+   <tr valign="top">
+    <td><img src="map.png" height="350px"> </td>
+    <td><br> 地址：320桃園市中壢區遠東路135號元智大學學生宿舍旁<br><br> 客服專線：(03)463-8800轉分機owob<br><br> 營業時間：上午8:00 ~ 上午4:00（每月1日公休）</td>
+    <td><br> 追蹤我們：<br><br> <a href="https://www.facebook.com/yzucs"><img src="facebook.png" width="50px"></a>
+    <a href="https://instagram.com/yzucse.109?igshid=1w02waw5b1qjl"><img src="instagram.png" width="50px">
+    <a href="https://line.me/zh-hant/"><img src="line.png" width="48px"></td>
+   </tr>
+  </table>
+  
+</body>
+
+</html> 

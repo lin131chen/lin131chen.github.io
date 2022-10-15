@@ -1,0 +1,110 @@
+<html>
+	<head>
+	<title>owob作息破壞者</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			body{ 
+			font-family: 'Noto Sans TC', sans-serif;
+			font-size: 18px;
+			}
+			
+			p{
+			text-align:center;
+			margin-left: 25%;
+			margin-right: 25%;
+			}
+			
+			a{
+			color:white;
+			text-decoration:none;
+			}
+			<!--按鈕效果-->
+			.ex-button{
+				line-height: 50px;
+				height: 50px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin: 20px auto;
+				margin-bottom:0;
+				width: 400px;
+				max-width: 100%;
+				cursor: pointer;
+				background-color: #c76161;
+				color: #FFF;
+				transition: all .3s linear;
+				position: relative;
+			}
+			
+			.mh {
+				color: rgba(255,255,255,1);
+				background-color: #c76161;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				transition: all 0.5s;
+				line-height: 40px;
+				position: relative;
+				border: 1px solid rgba(255,255,255,0.5);
+				overflow: hidden;
+			}
+
+			.mh > span {
+			transition: all 0.3s;
+			}
+
+			.mh:hover > span{
+				opacity: 0;
+				transform: translate(0px,40px);
+			}
+			
+			.mh::after{
+				content: attr(data-text);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transform: translate(-30%, -50%) rotate(-30deg);
+
+				transition: all 0.3s;   
+			}
+			
+			.mh:hover::after{
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<h1 align="center">重要公告</h1>
+		
+		<table border = "0">
+		<tr>
+			<td><a href="index.html"><div class="ex.button mh" data-text="關於我們"><span>主頁</span></div></a></td>
+			<td><a href="new2.html"><div class="ex.button mh" data-text="訂位與預約"><span>產品介紹</span></div></a></td>
+			<td><a href="introduce.html"><div class="ex.button mh" data-text="人員簡介"><span>公司組成</span></div></a></td>
+			<td><a href="finance.html"><div class="ex.button mh" data-text="資金運用"><span>財務報表</span></div></a></td>
+			<td><a href="schedule.html"><div class="ex.button mh" data-text="重大活動"><span>行事曆</span></div></a></td>
+			<td><a href="feedback.html"><div class="ex.button mh" data-text="聯絡我們"><span>意見回饋</span></div></a><td>
+			<td><a href="announce.html"><div class="ex.button mh" data-text="重要公告"><span>最新消息</span></div></a><td>
+		</tr>
+		</table>
+		<hr>
+		<h2 align="center">宿舍門禁解除！</h2>
+		<p><sub>2020年10月20日</sub></p>
+		<p>經由同學在校長座談會的爭取，元智宿舍的門禁由晚間12點10分改為無限制。原以疫情為由而增設的門禁，在疫情趨緩，進出宿舍不再需要量體溫後，門禁導致了許多不便和來自住宿同學的不滿，甚至會將情緒發洩到宿自會的同學身上。今日的校長座談會終有同學挺身而出，提出能否解除門禁的提議，卻遭到樓長與宿服組的反對與迴避問題，對此校長幫學生說話：「你們在堅持什麼？」搏得學生好評。以下為由宿服組發布的門禁解除全文：</p>
+		<p align="left" style="background-color:rgba(83, 126, 194,0.5)">
+		<b><br>學生宿舍門禁公告<br>
+		公告日期：2020年10月20日<br>
+		有鑑於全校各單位及師生同仁皆配合及落實各項防疫措施，而住宿同學因課業<br>
+		研習有晚歸之需求，本校學生宿舍即日起門禁系統改為24小時刷卡進出。<br>
+		提醒住宿同學，注意交通與人身安全，並請遵守各項防疫規定。<br>
+		若無迫切需求，仍宜儘早回宿舍休息，早睡早起身體好。<br>
+		學生事務處宿舍服務組</b><br><br></p>
+		<p>因此，owob將<b>加開夜間營業的場地數量</b>還請同學們多多支持。
+		但於凌晨回到宿舍的同學請勿大聲喧嘩，以免吵到其餘住宿生，<b>若有喧鬧情事發生，owob一概不承擔任何責任。</b></p>
+	</body>
+</html>

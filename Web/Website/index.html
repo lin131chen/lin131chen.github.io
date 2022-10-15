@@ -1,0 +1,160 @@
+<html>
+	</head>
+		<title>owob作息破壞者</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			body{ 
+				font-family: 'Noto Sans TC', sans-serif;
+				font-size:18px;
+			}
+			
+			p{
+				color: white;
+				text-align: center;
+				margin-left: 20%;
+				margin-right: 20%;
+				background-color:rgba(83, 126, 194, 0.7);
+			}
+			
+			h2{
+				color: white;
+			}
+			<!--跑馬燈
+			marquee{
+			font-size:200px;
+			}-->
+			font{
+				font-size: 25px;
+			}
+			
+			a{
+				color:white;
+				text-decoration:none;
+			}
+			
+			.back{
+				background-image: url(background.jpg);
+				background-size: cover;
+			}
+			
+			<!--按鈕效果-->
+			.ex-button{
+				line-height: 50px;
+				height: 50px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin: 20px auto;
+				margin-bottom:0;
+				width: 400px;
+				max-width: 100%;
+				cursor: pointer;
+				background-color: #c76161;
+				color: #FFF;
+				transition: all .3s linear;
+				position: relative;
+			}
+			.mh {
+				color: rgba(255,255,255,1);
+				background-color: #c76161;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				transition: all 0.5s;
+				line-height: 40px;
+				position: relative;
+				border: 1px solid rgba(255,255,255,0.5);
+				overflow: hidden;
+			}
+
+			.mh > span {
+				transition: all 0.3s;
+			}
+
+			.mh:hover > span{
+				opacity: 0;
+				transform: translate(0px,40px);
+			}
+			
+			.mh::after{
+				content: attr(data-text);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transform: translate(-30%, -50%) rotate(-30deg);
+
+				transition: all 0.3s;   
+			}
+			
+			.mh:hover::after{
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 align="center">owob作息破壞者</h1>
+		
+		<marquee direction="left" scrollamount="8"><font>
+		cout << "請持學生證享有本校學生專屬優惠" << endl;</font></marquee>
+		
+		<table border = "0">
+		<tr>
+			<td><a href="index.html"><div class="ex.button mh" data-text="關於我們"><span>主頁</span></div></a></td>
+			<td><a href="new2.html"><div class="ex.button mh" data-text="訂位與預約"><span>產品介紹</span></div></a></td>
+			<td><a href="introduce.html"><div class="ex.button mh" data-text="人員簡介"><span>公司組成</span></div></a></td>
+			<td><a href="finance.html"><div class="ex.button mh" data-text="資金運用"><span>財務報表</span></div></a></td>
+			<td><a href="schedule.html"><div class="ex.button mh" data-text="重大活動"><span>行事曆</span></div></a></td>
+			<td><a href="feedback.html"><div class="ex.button mh" data-text="聯絡我們"><span>意見回饋</span></div></a><td>
+			<td><a href="announce.html"><div class="ex.button mh" data-text="重要公告"><span>最新消息</span></div></a><td>
+		</tr>
+		</table>
+		
+		<hr>
+		
+		<table width="50%" padding="5px" align="center">
+			<tr>
+				<td rowspan=2><img src="code.png" height="280px"></td><td><img src="board.jpg" height="135px"></td><td rowspan=2><img src="cocktail.jpg" height="280px"></td>
+				<td><img src="game.jpg" height="140px"></td><td><br><img src="wifi.jpg" height="125px"></td>
+			</tr>
+			<tr>
+				<td><img src="food.jpg" height="120px"></td><td><br><img src="read.jpg" width="200px"></td><td><br><img src="sing.jpg" height="100px"></td>
+				
+			</tr>
+		</table>
+		
+		<hr>
+		<div class="back">
+		<br>
+		
+		<h2 align="center">創立</h2>
+		<p>本公司落成於2020年10月，有鑑於元智附近沒有適合大學生聚會放鬆的地點，owob在萬眾期待中誕生。從校版的支持聲浪，到開啟全校募資，中途雖然遭受宿服組與各樓長的反對、疫情的影響，我們仍在學生們的支持下開始動工。經過長久的規劃、問卷調查，我們優先選出了數個學生們想去的熱門地點與需求，讓娛樂不再是機車停車場到早八教室那般遠的距離。</p>
+		
+		<h2 align="center">理念</h2>
+		<p>希望元智不再被看成遠東帝國其中一個不便於生活的廠房，而是能兼顧學生課業與需求的大學。因為距離與課堂時間的關係，而不想或是無法出校門？我們提供了地點。學餐的選擇不夠多？訂外送怕外送員卡在校門口或是教授提早下課或晚下課導致雙方互等等不到？我們提供了代訂餐點與保管的服務。畢業門檻說要修過程式設計但bug找不到？資工系同學為你解答。我們想成為元智第一個擁有整合功能場所，帶給同學方便與樂趣。</p>
+		
+		<h2 align="center">名稱由來</h2>
+		<p>owob是一個表情符號，o是眼睛、w是嘴巴、b是比讚的手勢。旨在希望每個使用過我們服務的同學都能對我們留下好評，點亮同學們的大學生活。</p>
+		
+		<br>
+		<br>
+		
+		</div>
+		<hr>
+		
+		<table width=100% rules="cols" style="table-layout:fixed">
+			<tr valign="top">
+				<td><img src="map.png" height="350px"> </td>
+				<td><br> 地址：320桃園市中壢區遠東路135號元智大學學生宿舍旁<br><br> 客服專線：(03)463-8800轉分機owob<br><br> 營業時間：上午8:00 ~ 上午4:00（每月1日公休）</td>
+				<td><br> 追蹤我們：<br><br> <a href="https://www.facebook.com/yzucs"><img src="facebook.png" width="50px"></a>
+				<a href="https://instagram.com/yzucse.109?igshid=1w02waw5b1qjl"><img src="instagram.png" width="50px">
+				<a href="https://line.me/zh-hant/"><img src="line.png" width="48px"></td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>owob作息破壞者</title>
+		
+		<meta charset="UTF-8">
+		<style type="text/css">
+		#circle--square{
+				display:inline-block;
+			position:relative;
+			width:200px;
+			height:200px;
+			overflow:hidden;
+			border-radius:50%;
+			}
+
+
+
+			body{ 
+				font-family: 'Noto Sans TC', sans-serif;
+				font-size:18px;
+			}
+			
+
+			h2{
+				color: white;
+			}
+			<!--跑馬燈
+			marquee{
+			font-size:200px;
+			}-->
+
+			
+			a{
+				color:white;
+				text-decoration:none;
+			}
+			
+			.back{
+				background-image: url(background.jpg);
+				background-size: cover;
+			}
+			
+			<!--按鈕效果-->
+			.ex-button{
+				line-height: 50px;
+				height: 50px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin: 20px auto;
+				margin-bottom:0;
+				width: 400px;
+				max-width: 100%;
+				cursor: pointer;
+				background-color: #c76161;
+				color: #FFF;
+				transition: all .3s linear;
+				position: relative;
+			}
+			.mh {
+				color: rgba(255,255,255,1);
+				background-color: #c76161;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				transition: all 0.5s;
+				line-height: 40px;
+				position: relative;
+				border: 1px solid rgba(255,255,255,0.5);
+				overflow: hidden;
+			}
+
+			.mh > span {
+				transition: all 0.3s;
+			}
+
+			.mh:hover > span{
+				opacity: 0;
+				transform: translate(0px,40px);
+			}
+			
+			.mh::after{
+				content: attr(data-text);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transform: translate(-30%, -50%) rotate(-30deg);
+
+				transition: all 0.3s;   
+			}
+			
+			.mh:hover::after{
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+			<!--table效果-->
+			<!--#t01 table{
+				width: 33%;    
+				color: white; 
+				font-size: 20px; 
+				border: 1px solid white; 
+				border-spacing: 20px;
+			}-->
+
+			
+			
+			
+			
+	.tablehead {
+        table-layout:fixed;
+        clear:both;
+        width:70%;
+        height:40px;
+        border:#ccc 1px solid;
+        margin-top:10px;
+		background-color:rgba(83, 126, 194, 0.8);	
+		color:white;
+    }
+    .tablebody {
+        table-layout:fixed;
+        clear:both;
+        width:70.4%;
+		height:60px;
+        margin-top:-1px;
+		border-spacing:4px;
+		margin: 0 auto;
+		
+
+    }
+    .tablebody td {
+		height:60px;
+        border:#ccc 1px solid;
+        text-align:center;
+		padding-top:5px;
+		vertical-align:super;
+		
+    }
+	.tablehead td {
+        border:#ccc 1px solid;
+        text-align:center;
+		padding-top:10px;
+		
+    }
+    .tablebody tr {
+        width:100%;
+        
+		
+    }
+
+    .tablebodyBox {
+        overflow-x: hidden;
+        width:100%;
+		height:500px;
+        overflow-y:scroll;
+        border-bottom:1px solid #ccc;
+		position:relative;
+		left:1px;
+
+    }
+	.tablebodyBox::-webkit-scrollbar {
+		width:2px;
+		
+	}
+	.tablebodyBox::-webkit-scrollbar-thumb {
+		background-color:gray;
+	}
+	.month{
+		font-size:20px;
+		
+	}
+	.text{
+		font-size:15px;
+		padding-left:2px;
+		padding-right:2px;
+		background-color:rgba(83, 126, 194, 0.8);	
+		border:5px solid white;border-radius:10px;
+		color:white;
+	}
+	.number{
+		position:relative;
+		
+	}
+	h1{
+		vertical-align:super;
+		text-align:center;
+	}
+
+		</style>
+	</head>
+	<body>
+
+		<h1>行事曆-重要活動</h1>
+
+		<table border = "0">
+		<tr>
+			<td><a href="index.html"><div class="ex.button mh" data-text="關於我們"><span>主頁</span></div></a></td>
+			<td><a href="new2.html"><div class="ex.button mh" data-text="訂位與預約"><span>產品介紹</span></div></a></td>
+			<td><a href="introduce.html"><div class="ex.button mh" data-text="人員簡介"><span>公司組成</span></div></a></td>
+			<td><a href="finance.html"><div class="ex.button mh" data-text="資金運用"><span>財務報表</span></div></a></td>
+			<td><a href="schedule.html"><div class="ex.button mh" data-text="重大活動"><span>行事曆</span></div></a></td>
+			<td><a href="feedback.html"><div class="ex.button mh" data-text="聯絡我們"><span>意見回饋</span></div></a><td>
+			<td><a href="announce.html"><div class="ex.button mh" data-text="重要公告"><span>最新消息</span></div></a><td>
+		</tr>
+		</table>
+		<hr>	
+		<table class="tablehead" align="center">
+    <tr>
+        <td style="width:78px;">日</td>
+        <td style="width:78px;">一</td>
+        <td style="width:78px;">二</td>
+        <td style="width:78px;">三</td>
+        <td style="width:78px;">四</td>
+        <td style="width:78px;">五</td>
+        <td style="width:78px;">六</td>
+		
+    </tr>
+</table>
+<div class="tablebodyBox" align="center">
+    <table class="tablebody"  >
+	<th colspan="7" class="month">
+	<b>10月</b>
+	</th>
+	<tr>
+        <td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+        <td style="width:80px;">1
+		<p class="text"><abbr title="開吃鹹蛋黃月餅。">中秋節</p></td>
+        <td style="width:80px;">2</td>
+		
+        <td style="width:80px;">3</td>
+        <td style="width:80px;">4</td>
+	</tr>
+	<tr>
+		<td style="width:80px;">5
+		<p class="text"><a href="http://140.138.155.226/~s1091444/web/mid-project/announce4.html">owob盛大開幕！</a></p></td>
+		
+        <td style="width:80px;">6</td>
+        <td style="width:80px;">7</td>
+        <td style="width:80px;">8</td>
+        <td style="width:80px;">9</td>
+        <td style="width:80px;">10
+		<p class="text"><abbr title="是10/10不是10/01喔。">國慶日</p></td>
+        <td style="width:80px;">11</td>
+	</tr>
+	<tr>
+		<td style="width:80px;">12</td>
+        <td style="width:80px;">13</td>
+        <td style="width:80px;">14
+		<p class="text"><a href ="http://140.138.155.226/~s1091444/web/mid-project/announce3.html">滑板租借功能開放</a></p></td>
+		
+        <td style="width:80px;">15</td>
+        <td style="width:80px;">16</td>
+        <td style="width:80px;">17</td>
+        <td style="width:80px;">18
+		<p class="text"><a href="http://140.138.155.226/~s1091444/web/mid-project/announce2.html">DEBUG功能隆重開放</a></p></td>
+	</tr>
+		<tr>
+		<td style="width:80px;">19</td>
+        <td style="width:80px;" >20
+		<p class="text"><a href="http://140.138.155.226/~s1091444/web/mid-project/announce1.html">宿舍門禁解除！</a></p></td>
+        <td style="width:80px;">21</td>
+        <td style="width:80px;">22</td>
+        <td style="width:80px;">23</td>
+        <td style="width:80px;">24</td>
+        <td style="width:80px;">25
+		<p class="text"><abbr title="該陪老人家爬山咯">重陽街</p></td>
+	</tr>
+		<tr>
+		<td style="width:80px;">26</td>
+        <td style="width:80px;">27</td>
+        <td style="width:80px;">28</td>
+        <td style="width:80px;">29</td>
+        <td style="width:80px;">30</td>
+        <td style="width:80px;">31</td>
+        <td style="width:80px;"></td>
+	</tr>
+	<th colspan="7" class="month">
+		<b>11月</b>
+	</th>
+	<tr>
+        <td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+		<td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+        <td style="width:80px;">1</td>
+        
+	</tr>
+	<tr>
+		<td style="width:80px;">2</td>
+        <td style="width:80px;">3</td>
+        <td style="width:80px;">4</td>
+		<td style="width:80px;">5<p class="text"><abbr title="輸入折扣碼「0487」有優惠">開店紀念日</p></td>
+        <td style="width:80px;">6</td>
+        <td style="width:80px;">7</td>
+        <td style="width:80px;">8</td>
+
+	</tr>
+	<tr>
+        <td style="width:80px;">9</td>
+        <td style="width:80px;">10</td>
+        <td style="width:80px;">11
+		<p class="text">雙11 光棍節</p></td>
+		<td style="width:80px;">12</td>
+        <td style="width:80px;">13<p class="text"><abbr title="記得ikea不唸ikea，然後買鯊鯊咯!">ikea周年慶最後一天</p></td>
+        <td style="width:80px;">14</td>
+        <td style="width:80px;">15</td>
+
+	</tr>
+		<tr>
+        <td style="width:80px;">16</td>
+        <td style="width:80px;">17</td>
+        <td style="width:80px;">18	
+		<p class="text">狂賀!基哥課變為兩堂</p></td>
+		<td style="width:80px;">19
+		<p class="text"></p></td>
+        <td style="width:80px;">20</td>
+        <td style="width:80px;">21</td>
+        <td style="width:80px;">22</td>
+
+	</tr>
+		<tr>
+        <td style="width:80px;">23
+		<p class="text">作業8該交咯</p></td>
+        <td style="width:80px;">24</td>
+        <td style="width:80px;">25</td>		
+		<td style="width:80px;">26</td>
+        <td style="width:80px;">27</td>
+        <td style="width:80px;">28</td>
+        <td style="width:80px;">29</td>
+	</tr>
+			<tr>
+        <td style="width:80px;">30</td>
+        <td style="width:80px;"></td>
+        <td style="width:80px;"></td>		
+		<td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+        <td style="width:80px;"></td>
+
+	</tr>
+    </table>
+</div>
+
+					<table width=100% rules="cols" style="table-layout:fixed"><hr>
+			<tr valign="top">
+				<td><img src="map.png" height="350px"> </td>
+				<td><br> 地址：320桃園市中壢區遠東路135號元智大學學生宿舍旁<br><br> 客服專線：(03)463-8800轉分機owob<br><br> 營業時間：上午8:00 ~ 上午4:00（每月1日公休）</td>
+				<td><br> 追蹤我們：<br><br> <a href="https://www.facebook.com/yzucs"><img src="facebook.png" width="50px"></a>
+				<a href="https://instagram.com/yzucse.109?igshid=1w02waw5b1qjl"><img src="instagram.png" width="50px">
+				<a href="https://line.me/zh-hant/"><img src="line.png" width="48px"></td>
+			</tr>
+		</table>
+	</body>
+</html>

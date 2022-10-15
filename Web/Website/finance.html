@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>owob作息破壞者</title>
+		
+		<meta charset="UTF-8">
+		<style type="text/css">
+		#circle--square{
+				display:inline-block;
+			position:relative;
+			width:200px;
+			height:200px;
+			overflow:hidden;
+			border-radius:50%;
+			}
+			body{ 
+				font-family: 'Noto Sans TC', sans-serif;
+				font-size:18px;
+			}
+			
+
+			h2{
+				color: white;
+			}
+			<!--跑馬燈
+			marquee{
+			font-size:200px;
+			}-->
+			font{
+				font-size: 25px;
+			}
+			
+			a{
+				color:white;
+				text-decoration:none;
+			}
+			
+			.back{
+				background-image: url(background.jpg);
+				background-size: cover;
+			}
+			
+			<!--按鈕效果-->
+			.ex-button{
+				line-height: 50px;
+				height: 50px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin: 20px auto;
+				margin-bottom:0;
+				width: 400px;
+				max-width: 100%;
+				cursor: pointer;
+				background-color: #c76161;
+				color: #FFF;
+				transition: all .3s linear;
+				position: relative;
+			}
+			.mh {
+				color: rgba(255,255,255,1);
+				background-color: #c76161;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				transition: all 0.5s;
+				line-height: 40px;
+				position: relative;
+				border: 1px solid rgba(255,255,255,0.5);
+				overflow: hidden;
+			}
+
+			.mh > span {
+				transition: all 0.3s;
+			}
+
+			.mh:hover > span{
+				opacity: 0;
+				transform: translate(0px,40px);
+			}
+			
+			.mh::after{
+				content: attr(data-text);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transform: translate(-30%, -50%) rotate(-30deg);
+
+				transition: all 0.3s;   
+			}
+			
+			.mh:hover::after{
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+			
+			<!--table效果-->
+			<!--#t01 table{
+				width: 33%;    
+				color: white; 
+				font-size: 20px; 
+				border: 1px solid white; 
+				border-spacing: 20px;
+			}-->
+			#t01 {
+				width: 500px;
+				color: white;	
+				font-size: 20px;
+				border-spacing: 20px;	
+				position: relative;
+				left: 445px;
+				bottom:140px;
+				padding: 10px;
+				height:150px;
+				background-color:rgba(83, 126, 194, 0.8);
+			}
+			#t02 {
+				width: 500px;
+				color: white;	
+				font-size: 20px;
+				border-spacing: 20px;	
+				position: relative;
+				left: 445px;
+				bottom:120px;
+				padding: 10px;
+				height:150px;
+				background-color:rgba(83, 126, 194, 0.8);
+			}
+			#t03 {
+				width: 500px;
+				color: white;	
+				font-size: 20px;
+				border-spacing: 20px;	
+				position: relative;
+				left: 445px;
+				bottom:100px;
+				padding: 10px;
+				height:150px;
+				background-color:rgba(83, 126, 194, 0.8);
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1 align="center">財務報表-資金運用</h1>
+		
+		<table border = "0" >
+		<tr>
+			<td><a href="index.html"><div class="ex.button mh" data-text="關於我們"><span>主頁</span></div></a></td>
+   <td><a href="new2.html"><div class="ex.button mh" data-text="訂位與預約"><span>產品介紹</span></div></a></td>
+   <td><a href="introduce.html"><div class="ex.button mh" data-text="人員簡介"><span>公司組成</span></div></a></td>
+   <td><a href="finance.html"><div class="ex.button mh" data-text="資金運用"><span>財務報表</span></div></a></td>
+   <td><a href="schedule.html"><div class="ex.button mh" data-text="重大活動"><span>行事曆</span></div></a></td>
+   <td><a href="feedback.html"><div class="ex.button mh" data-text="聯絡我們"><span>意見回饋</span></div></a><td>
+   <td><a href="announce.html"><div class="ex.button mh" data-text="重要公告"><span>最新消息</span></div></a><td>
+		</tr>
+		</table>
+		<hr>	
+		<p align=center><img src="finance.png">
+
+					<table width=100% rules="cols" style="table-layout:fixed"><hr>
+			<tr valign="top">
+				<td><img src="map.png" height="350px"> </td>
+				<td><br> 地址：320桃園市中壢區遠東路135號元智大學學生宿舍旁<br><br> 客服專線：(03)463-8800轉分機owob<br><br> 營業時間：上午8:00 ~ 上午4:00（每月1日公休）</td>
+				<td><br> 追蹤我們：<br><br> <a href="https://www.facebook.com/yzucs"><img src="facebook.png" width="50px"></a>
+				<a href="https://instagram.com/yzucse.109?igshid=1w02waw5b1qjl"><img src="instagram.png" width="50px">
+				<a href="https://line.me/zh-hant/"><img src="line.png" width="48px"></td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+	<head>
+	<title>owob作息破壞者</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			body{ 
+			font-family: 'Noto Sans TC', sans-serif;
+			font-size: 18px;
+			}
+			
+			p{
+			text-align:center;
+			margin-left: 25%;
+			margin-right: 25%;
+			}
+			
+			a{
+			color:white;
+			text-decoration:none;
+			}
+			<!--按鈕效果-->
+			.ex-button{
+				line-height: 50px;
+				height: 50px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin: 20px auto;
+				margin-bottom:0;
+				width: 400px;
+				max-width: 100%;
+				cursor: pointer;
+				background-color: #c76161;
+				color: #FFF;
+				transition: all .3s linear;
+				position: relative;
+			}
+			
+			.mh {
+				color: rgba(255,255,255,1);
+				background-color: #c76161;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				transition: all 0.5s;
+				line-height: 40px;
+				position: relative;
+				border: 1px solid rgba(255,255,255,0.5);
+				overflow: hidden;
+			}
+
+			.mh > span {
+			transition: all 0.3s;
+			}
+
+			.mh:hover > span{
+				opacity: 0;
+				transform: translate(0px,40px);
+			}
+			
+			.mh::after{
+				content: attr(data-text);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transform: translate(-30%, -50%) rotate(-30deg);
+
+				transition: all 0.3s;   
+			}
+			
+			.mh:hover::after{
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<h1 align="center">重要公告</h1>
+		
+		<table border = "0">
+		<tr>
+			<td><a href="index.html"><div class="ex.button mh" data-text="關於我們"><span>主頁</span></div></a></td>
+			<td><a href="new2.html"><div class="ex.button mh" data-text="訂位與預約"><span>產品介紹</span></div></a></td>
+			<td><a href="introduce.html"><div class="ex.button mh" data-text="人員簡介"><span>公司組成</span></div></a></td>
+			<td><a href="finance.html"><div class="ex.button mh" data-text="資金運用"><span>財務報表</span></div></a></td>
+			<td><a href="schedule.html"><div class="ex.button mh" data-text="重大活動"><span>行事曆</span></div></a></td>
+			<td><a href="feedback.html"><div class="ex.button mh" data-text="聯絡我們"><span>意見回饋</span></div></a><td>
+			<td><a href="announce.html"><div class="ex.button mh" data-text="重要公告"><span>最新消息</span></div></a><td>
+		</tr>
+		</table>
+		<hr>
+		<h2 align="center">DEBUG功能隆重開放</h2>
+		<p><sub>2020年10月18日</sub></p>
+		<p>聽說基哥上機考就要到了？我們隆重邀請到曾經當過基哥助教的學長姐來解答大家對於目前為止功課的疑惑！現有搭配宵夜或是多人一起的優惠方案，配上宵夜是你期中分數的救星！本優惠僅限於資工系的學生，要購買的同學請攜帶學生證。</p>
+		
+		<table border="1" align="center" cellpadding="25" style="background-color:rgba(83, 126, 194,0.35)">
+		<tr> <th></th> <th>資工專屬方案</th> <th>活動特惠價</th> </tr>
+		<tr> <td>方案一</td> <td>兩人以上問題諮詢</td> <td>25元/人</td></tr>
+		<tr> <td>方案二</td> <td>問題諮詢 + 宵夜</td> <td>宵夜打85折</td></tr>
+		</table>
+		
+		<p>別系的同學也別擔心，即日起將有資工大三、大四學長姐進駐owob，不分科系都能來debug與問程設相關問題，不再害怕教授沒教過卻要學生寫的情形！目前此服務採預約制，且期中考前一週與當週不提供服務還請各位見諒。但自習室等照常開放，還請多加利用。</P>
+		
+	</body>
+</html>

@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>owob作息破壞者</title>
+		
+		<meta charset="UTF-8">
+		<style type="text/css">
+		#circle--square{
+				display:inline-block;
+			position:relative;
+			width:200px;
+			height:200px;
+			overflow:hidden;
+			border-radius:50%;
+			border:1px solid black;
+			margin-right:10px;
+			align: right
+			}
+
+			body{ 
+				font-family: 'Noto Sans TC', sans-serif;
+				font-size:18px;
+			}
+			
+
+			h2{
+				color: white;
+			}
+			<!--跑馬燈
+			marquee{
+			font-size:200px;
+			}-->
+			font{
+				font-size: 25px;
+			}
+			
+			a{
+				color:white;
+				text-decoration:none;
+			}
+			
+			.back{
+				background-image: url(background.jpg);
+				background-size: cover;
+			}
+			
+			<!--按鈕效果-->
+			.ex-button{
+				line-height: 50px;
+				height: 50px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin: 20px auto;
+				margin-bottom:0;
+				width: 400px;
+				max-width: 100%;
+				cursor: pointer;
+				background-color: #c76161;
+				color: #FFF;
+				transition: all .3s linear;
+				position: relative;
+			}
+			.mh {
+				color: rgba(255,255,255,1);
+				background-color: #c76161;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				transition: all 0.5s;
+				line-height: 40px;
+				position: relative;
+				border: 1px solid rgba(255,255,255,0.5);
+				overflow: hidden;
+			}
+
+			.mh > span {
+				transition: all 0.3s;
+			}
+
+			.mh:hover > span{
+				opacity: 0;
+				transform: translate(0px,40px);
+			}
+			
+			.mh::after{
+				content: attr(data-text);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transform: translate(-30%, -50%) rotate(-30deg);
+
+				transition: all 0.3s;   
+			}
+			
+			.mh:hover::after{
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+			<!--table效果-->
+			<!--#t01 table{
+				width: 33%;    
+				color: white; 
+				font-size: 20px; 
+				border: 1px solid white; 
+				border-spacing: 20px;
+			}-->
+			#t01 {
+				width:55%;
+				
+				color: white;	
+				font-size: 20px;
+				border-spacing: 0px;
+				position:relative;
+				top:20px;
+				
+				
+			}
+			#t01 td{
+				valign:top; 
+				padding:5px;
+			height:150px;
+			}
+			
+			#t02 {
+				padding:3px;
+				height:150px; 
+				width:500px;
+				background-color:rgba(83, 126, 194, 0.8);	
+				border:15px solid;border-radius:25px;
+				padding-top:5px;
+				
+			}
+		
+		</style>
+	</head>
+	<body>
+		<h1 align="center">公司組成-人員介紹</h1>
+		
+		<table border = "0" >
+		<tr>
+			<td><a href="index.html"><div class="ex.button mh" data-text="關於我們"><span>主頁</span></div></a></td>
+   <td><a href="new2.html"><div class="ex.button mh" data-text="訂位與預約"><span>產品介紹</span></div></a></td>
+   <td><a href="introduce.html"><div class="ex.button mh" data-text="人員簡介"><span>公司組成</span></div></a></td>
+   <td><a href="finance.html"><div class="ex.button mh" data-text="資金運用"><span>財務報表</span></div></a></td>
+   <td><a href="schedule.html"><div class="ex.button mh" data-text="重大活動"><span>行事曆</span></div></a></td>
+   <td><a href="feedback.html"><div class="ex.button mh" data-text="聯絡我們"><span>意見回饋</span></div></a><td>
+   <td><a href="announce.html"><div class="ex.button mh" data-text="重要公告"><span>最新消息</span></div></a><td>
+		</tr>
+		</table>
+		<hr>			
+
+			<table align="center" id="t01">
+			<tr>
+				<td style="width:150px;">
+				<img id="circle--square"  src=ikea.jpg alt="Smiley face" style=width:150px;height:150px;" >
+				<td  id="t02" ><strong><big>ikea不唸ikea-BOSS</big></strong><br>
+				<blockquote><small>公司老闆，最carry的公司人物，我們公司能存在寵物一職，都要歸功於ikea不唸ikea，因為有她將公司大大小小業務搞定，我們才可以找尋理想抱負。<br>
+				因此這再度宣導「ikea不唸ikea」</small></blockquote>		
+				</th>
+			</tr>
+			<tr>
+				<td style="width:150px;">
+				<img id="circle--square"  src=wchen.jpg alt="Smiley face" style=width:150px;height:150px;" >
+				<td  id="t02"><strong><big>WChen-員工一號</big></strong><br>
+				<blockquote><small>員工一號，看似她不孤單，有員工二號陪著，但因員工二號太過鹹魚，因此員工該做的工作都是由員工一號獨自完成。她常常看著隔壁那條鹹魚很想抽她，但因鹹魚太可愛，下不了手，所以改為愛的抱抱一個。<br>
+				Ps.員工二號還單身，有興趣者可找鹹魚面試。</small></blockquote>
+			</th>
+			</tr>
+			<tr>
+				<td style="width:150px;">
+				<img id="circle--square"  src=data:image/jpeg;base64,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 alt="Smiley face" style=width:150px;height:150px;" >
+				<td  id="t02"><strong><big>滴-員工二號</big></strong><br>
+				<blockquote><small>目前致力於升職成為寵物鹹魚，因此每天都在努力的出做最渾水摸魚、最冗的績效。希望哪天可以成為躺在公司沙發上的寵物鹹魚。<br>
+				此人人生目標「成為有錢的鹹魚」<br>
+				Ps.鹹魚生日06/26，很重要，很重要，很重要。</small></blockquote>
+			</th>
+			</tr>
+			
+			</table>
+			<br>
+			<br>
+					<table width=100% rules="cols" style="table-layout:fixed"><hr>
+			<tr valign="top">
+				<td><img src="map.png" height="350px"> </td>
+				<td><br> 地址：320桃園市中壢區遠東路135號元智大學學生宿舍旁<br><br> 客服專線：(03)463-8800轉分機owob<br><br> 營業時間：上午8:00 ~ 上午4:00（每月1日公休）</td>
+				<td><br> 追蹤我們：<br><br> <a href="https://www.facebook.com/yzucs"><img src="facebook.png" width="50px"></a>
+				<a href="https://instagram.com/yzucse.109?igshid=1w02waw5b1qjl"><img src="instagram.png" width="50px">
+				<a href="https://line.me/zh-hant/"><img src="line.png" width="48px"></td>
+			</tr>
+		</table>
+	</body>
+</html>

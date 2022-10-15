@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title>owob作息破壞者</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			body{ 
+				font-family: 'Noto Sans TC', sans-serif;
+				font-size:20px;
+			}
+			
+			a{
+				color: white;
+			}
+			
+			<!--按鈕效果-->
+			.ex-button{
+				line-height: 50px;
+				height: 50px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				margin: 20px auto;
+				margin-bottom:0;
+				width: 400px;
+				max-width: 100%;
+				cursor: pointer;
+				background-color: #c76161;
+				color: #FFF;
+				transition: all .3s linear;
+				position: relative;
+			}
+			.mh {
+				color: rgba(255,255,255,1);
+				background-color: #c76161;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				transition: all 0.5s;
+				line-height: 40px;
+				position: relative;
+				border: 1px solid rgba(255,255,255,0.5);
+				overflow: hidden;
+			}
+
+			.mh > span {
+			transition: all 0.3s;
+			}
+
+			.mh:hover > span{
+				opacity: 0;
+				transform: translate(0px,40px);
+			}
+			
+			.mh::after{
+				content: attr(data-text);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transform: translate(-30%, -50%) rotate(-30deg);
+
+				transition: all 0.3s;   
+			}
+			
+			.mh:hover::after{
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+			
+			
+			#t01 {
+				width: 50%;
+				color: white;	
+				font-size: 20px;
+				border-spacing: 20px;	
+			}
+			#t01 tr{
+				valign:top; 
+				height:500px; 
+				background-color:rgba(83, 126, 194, 0.8);
+			}
+			
+			#t01 td{
+				padding: 15px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1 align="center">重要公告</h1>
+		
+		<table border = "0">
+		<tr>
+			<td><a href="index.html" style="text-decoration: none"><div class="ex.button mh" data-text="關於我們"><span>主頁</span></div></a></td>
+			<td><a href="new2.html" style="text-decoration: none"><div class="ex.button mh" data-text="訂位與預約"><span>產品介紹</span></div></a></td>
+			<td><a href="introduce.html" style="text-decoration: none"><div class="ex.button mh" data-text="人員簡介"><span>公司組成</span></div></a></td>
+			<td><a href="finance.html" style="text-decoration: none"><div class="ex.button mh" data-text="資金運用"><span>財務報表</span></div></a></td>
+			<td><a href="schedule.html"style="text-decoration: none"><div class="ex.button mh" data-text="重大活動"><span>行事曆</span></div></a></td>
+			<td><a href="feedback.html" style="text-decoration: none"><div class="ex.button mh" data-text="聯絡我們"><span>意見回饋</span></div></a><td>
+			<td><a href="announce.html"style="text-decoration: none"><div class="ex.button mh" data-text="重要公告"><span>最新消息</span></div></a><td>
+		</tr>
+		</table>
+		<hr>
+		<table align="center" id="t01">
+			<tr>
+				<td><strong><big>宿舍門禁解除！</big></strong><br>
+				<small>2020年10月20日</small><br><br>
+				經由同學在校長座談會的爭取，元智宿舍的門禁由晚間12點10分改為無限制。原以疫情為由而增設的門禁，在疫情趨緩，進出宿舍不再需要量體溫後，門禁導致了許多不便和來自住宿同學的不滿，甚至會將情緒發洩到宿自會的同學身上。今日的校長座談會終有同學挺身而出，提出能否解除門禁的提議，卻遭到樓長與宿服組的反對與迴避問題…<a href="announce1.html">閱讀全文</a></td>
+			</tr>
+				
+			<tr>
+				<td><strong><big>DEBUG功能隆重開放</big></strong><br>
+				<small>2020年10月18日</small><br><br>
+				聽說基哥上機考就要到了？我們隆重邀請到曾經當過基哥助教的學長姐來解答大家對於目前為止功課的疑惑！現有搭配自習室與討論室的方案，配上宵夜是你期中分數的救星！…<a href="announce2.html">閱讀全文</a></td>
+			</tr>
+			
+			<tr>
+				<td><strong><big>滑板租借功能開放</big></strong><br>
+				<small>2020年10月14日</small><br><br>
+				以往因為滑板數量不足的限制，我們只提供在owob內進行短時間的租借，近日我們添購了新的專業滑板，讓同學們可以以半天為單位租借到owob外啦！…<a href="announce3.html">閱讀全文</a></td>
+			</tr>
+			
+			<tr>
+				<td><strong><big>owob盛大開幕！</big></strong><br>
+				<small>2020年10月5日</small><br><br>
+				經過這些日子的努力，我們終於開幕啦！感謝各位包容我們這些時日施工的吵鬧聲，為此，所有住宿生從今天開始將會陸續收到我們發放的折價券\(o w o)/…<a href="announce4.html">閱讀全文</a></td>
+		</table>
+		
+		<hr>
+		
+		<table width=100% rules="cols" style="table-layout:fixed">
+			<tr valign="top">
+				<td><img src="map.png" height="350px"> </td>
+				<td><br> 地址：320桃園市中壢區遠東路135號元智大學學生宿舍旁<br><br> 客服專線：(03)463-8800轉分機owob<br><br> 營業時間：上午8:00 ~ 上午4:00（每月1日公休）</td>
+				<td><br> 追蹤我們：<br><br> <a href="https://www.facebook.com/yzucs"><img src="facebook.png" width="50px"></a>
+				<a href="https://instagram.com/yzucse.109?igshid=1w02waw5b1qjl"><img src="instagram.png" width="50px">
+				<a href="https://line.me/zh-hant/"><img src="line.png" width="48px"></td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
